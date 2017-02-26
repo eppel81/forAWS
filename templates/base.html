@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS presentation</title>
+  <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="{% url 'index' %}">Home</a>
+      </li>
+      <li>
+        <a href="{% url 'all-photos' %}">See photos</a>
+      </li>
+      <li>
+        <a href="{% url 'upload-photo' %}">Upload photo</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row">
+    {% block content %}
+
+    {% endblock %}
+  </div>
+
+</div>
+
+
+<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
