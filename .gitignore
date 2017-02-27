@@ -51,7 +51,7 @@ coverage.xml
 
 # Django stuff:
 *.log
-my_prj/local_settings.py
+settings/local_settings.py
 
 # Flask stuff:
 instance/
@@ -90,3 +90,5 @@ ENV/
 
 uploads
 .idea
+settings/prod.py
+settings/dev.py
