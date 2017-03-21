@@ -131,7 +131,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR + '/staticfiles/'
+# STATIC_ROOT = BASE_DIR + '/staticfiles/'
 
 MEDIA_URL = '/uploads/'
-MEDIA_ROOT = BASE_DIR + '/uploads/'
+# MEDIA_ROOT = BASE_DIR + '/uploads/'
